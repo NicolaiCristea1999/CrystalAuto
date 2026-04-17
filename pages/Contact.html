@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrystalCar- Vânzări Mașini</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark.css">
+    <link rel="icon" href="Img/car.png">
+    <script src="../js/jsdark.js" defer></script>
+    <script src="../js/js.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Logo + titlu -->
+        <a href="../index.html" class="logo-container">
+            <img src="../Img/car.png" alt="Logo" class="logo">
+            <h1 id="logo">CrystalAuto</h1>
+        </a>
+
+        <!-- Meniul desktop -->
+        <nav>
+            <a href="../index.html">🚗Mașini</a>
+            <a href="informatii.html">ℹ️Despre Noi</a>
+            <a href="Contact.html">📱Contact</a>
+        </nav>
+        <div class="header-actions">
+            <a href="tel:+37369351531" class="btn phone-btn">
+                📞 <span></span>
+            </a>
+
+            <button id="darkModeToggle" class="btn dark-toggle">
+                🌙 <span></span>
+            </button>
+        </div>
+
+        <!-- Hamburger mobile -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-logo">
+                <img src="../Img/car.png" alt="Logo" class="logo-small">
+                <span>CrystalAuto</span>
+            </div>
+
+            <ul class="mobile-nav-list">
+                <li><a href="../index.html"><i class="fas fa-car"></i> 🚗Mașini</a></li>
+                <li><a href="informatii.html"><i class="fas fa-info-circle"></i> ℹ️Despre Noi</a></li>
+                <li><a href="Contact.html"><i class="fas fa-phone"></i> 📱Contact</a></li>
+            </ul>
+
+            <div class="mobile-contact">
+                <a href="tel:+37369351531" class="phone-btn"><i class="fas fa-phone-alt"></i> Sună acum</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1 align="center">Cum sa ne gasești?</h1>
+    <div class="contact-container">
+        <!-- STÂNGA -->
+        <div class="contact-info">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.3991827728396!2d28.214865776130914!3d45.91649767108504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65cb1106fe6c3%3A0x44bd537f8142e9e2!2sStrada%20%C8%98tefan%20cel%20Mare%20132%2C%20MD-3905%2C%20Cahul%2C%20Moldova!5e1!3m2!1sro!2s!4v1776406465988!5m2!1sro!2s"
+                width="729" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- DREAPTA -->
+        <div class="contact-form">
+            <h2>Contactează-ne</h2>
+            <table>
+                <tr>
+                    <td><strong>📧 Email:</strong></td>
+                    <td>NickCristea700@CrystalAuto.com</td>
+                </tr>
+
+                <tr>
+                    <td><strong>📍 Adresă:</strong></td>
+                    <td>Str. Ștefan cel Mare 132</td>
+                </tr>
+
+                <tr>
+                    <td><strong>📞 Telefon:</strong></td>
+                    <td>+373 700 000</td>
+                </tr>
+            </table>
+            <form>
+                <label>Nume</label>
+                <input type="text" required placeholder="Introdu numele">
+
+                <label>Email</label>
+                <input type="email" required placeholder="Introdu emailul">
+
+                <label>Mesaj</label>
+                <textarea required placeholder="Scrie mesajul tău"></textarea>
+
+                <label>Telefon</label>
+                <input required placeholder="Intrudu numarul de telefon"></texterea>
+                <button type="submit">Trimite</button>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+    <!-- <section class="quick-contact">
+        <h2>📞 Te sunăm noi</h2>
+        <p>Lasă-ne datele tale și te contactăm rapid</p>
+
+        <form class="quick-form">
+            <input type="text" placeholder="Nume" required>
+            <input type="tel" placeholder="Telefon" required>
+            <button type="submit">Trimite</button>
+        </form>
+    </section> -->
+    <script>
+        document.querySelector(".quick-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("✔ Mulțumim! Te vom contacta în curând.");
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + descriere -->
+            <div class="footer-box">
+                <h2>CrystalAuto</h2>
+                <p>
+                    Mașini de calitate, performanță și eleganță.
+                    Alege experiența premium pentru fiecare drum.
+                </p>
+            </div>
+
+            <!-- Link-uri -->
+            <div class="footer-box">
+                <h3>Link-uri rapide</h3>
+                <a href="../index.html">🚗 Mașini</a>
+                <a href="informatii.html">ℹ️ Despre Noi</a>
+                <a href="Contact.html">📞 Contact</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📍 Str. Ștefan cel Mare 132</p>
+                <p>📞 +373 693 515 31</p>
+                <p>📧 contact@crystalauto.md</p>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-box">
+                <h3>Urmărește-ne</h3>
+                <div class="socials">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">💬</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 CrystalAuto | Toate drepturile rezervate</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrystalCar- Vânzări Mașini</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="icon" href="Img/car.png">
+    <script src="js/js.js" defer></script>
+    <script src="js/jsdark.js" defer></script>
+    <script src="js/script_slidder.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo + titlu -->
+        <a href="index.html" class="logo-container">
+            <img src="Img/car.png" alt="Logo" class="logo">
+            <h1 id="logo">CrystalAuto</h1>
+        </a>
+
+        <!-- Meniul desktop -->
+        <nav>
+            <a href="index.html">🚗Mașini</a>
+            <a href="pages/informatii.html">ℹ️Despre Noi</a>
+            <a href="pages/Contact.html">📱Contact</a>
+        </nav>
+
+
+        <!-- Buton telefon -->
+        <!-- <a href="tel:+37369351531" class="phone-btn-header">
+            <i class="fas fa-phone-alt"></i> 069 351 531
+        </a> -->
+
+
+        <div class="header-actions">
+            <a href="tel:+37369351531" class="btn phone-btn">
+                📞 <span></span>
+            </a>
+
+            <button id="darkModeToggle" class="btn dark-toggle">
+                🌙
+            </button>
+        </div>
+
+
+        <!-- Hamburger mobile -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-logo">
+                <img src="Img/car.png" alt="Logo" class="logo-small">
+                <span>CrystalAuto</span>
+            </div>
+
+            <ul class="mobile-nav-list">
+                <li><a href="index.html"><i class="fas fa-car"></i>🚗 Mașini</a></li>
+                <li><a href="pages/informatii.html"><i class="fas fa-info-circle"></i>ℹ️ Despre Noi</a></li>
+                <li><a href="pages/Contact.html"><i class="fas fa-phone"></i>📱 Contact</a></li>
+            </ul>
+
+            <div class="mobile-contact">
+                <a href="tel:+37369351531" class="phone-btn"><i class="fas fa-phone-alt"></i> Sună acum</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section>
+        <!--slider-->
+        <div class="slideshow-container">
+            <div class="slide anim">
+                <div class="numbertext">1 / 4</div>
+                <img src="Img/Audi.jpg">
+                <div class="text">Eleganță și putere într-un singur model</div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">2 / 4</div>
+                <img src="Img/BMWK.jpg">
+                <div class="text">Experiență de condus fără compromis</div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">3 / 4</div>
+                <img src="Img/Bugatti.jpg">
+                <div class="text">Lux și tehnologie la superlativ</div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">4 / 4</div>
+                <div class="orar">
+                    <h2>ORAR</h2>
+                    <h3>Luni - Vineri:</h3>
+                    <h3>09:45-22:00</h3>
+                    <h3>Sâmbătă - Duminică:</h3>
+                    <h3>9:35-21:00</h3>
+                </div>
+                <div class="text">CrystalAuto</div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="cars">
+
+        <div class="car">
+            <img src="Img/TeslaModel3.jpg">
+
+            <div class="car-info">
+                <h3>Tesla Model 3</h3>
+                <p>📅 An: 2024</p>
+                <p>💰 Preț: 20,500€</p>
+                <p>⚡ 0-100 km/h</p>
+                <p>🎨 Alb</p>
+                <p>🔋 Electric</p>
+
+                <button>Cumpără</button>
+            </div>
+        </div>
+
+
+        <div class="car">
+            <img src="Img/Porche.jpg">
+            <h3>Porche 911</h3>
+            <p>📅An: 2026</p>
+            <p>💰Preț: 40,000€</p>
+            <p>Km/h: 294 </p>
+            <p>🎨Culoarea:Negru</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+
+        <div class="car">
+            <img src="Img/skodasuperb.jpg">
+            <h3>Shkoda superb</h3>
+            <p>📅An: 2017</p>
+            <p>💰Preț: 16,000€</p>
+            <p> km/h: 250</p>
+            <p>🎨Culoarea:Negru</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <p></p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="Img/BMWM.jpg">
+            <h3>BMW M4</h3>
+            <p>📅An: 2019</p>
+            <p>💰Preț: 20,000€</p>
+            <p>Km/h:250</p>
+            <p>🎨Culoarea:Alb</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="Img/Toyota Yaris.jpg">
+            <h3>Toyota Yaris</h3>
+            <p>📅An: 2019</p>
+            <p>💰Preț: 6,000€</p>
+            <p>Km/h:180 km/h</p>
+            <p>🎨Culoarea:Albastru</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="Img/Grotti Turismo R.webp">
+            <h3>Grotti Turismo R</h3>
+            <p>📅An: 2007</p>
+            <p>💰Preț: 120,000€</p>
+            <p> 127 mph </p>
+            <p>🎨Culoarea:Negru</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="Img/Dewbauchee Vagner.webp">
+            <h3>Dewbauchee Vanger</h3>
+            <p>📅An: 2016</p>
+            <p>💰Preț: 340,000€</p>
+            <p>172.50 MPH </p>
+            <p>🎨Culoarea:Negru</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+
+
+        <div class="car">
+            <img src="Img/bufallo.jpg">
+            <h3>Bufallo</h3>
+            <p>📅An:2013</p>
+            <p>💰Preț: 12,000€</p>
+            <p>Km/h: 180–200+ km/h, </p>
+            <p>🎨Culoarea:verde</p>
+            <p>🔋Tip conbustibil:Benzina</p>
+            <button>Cumpără</button>
+        </div>
+
+
+
+        <div class="car">
+            <img src="../Img/BMWK.jpg">
+            <h3>BMW</h3>
+
+            <p>📅 An: 2023</p>
+            <p>💰 Preț: 56,990€</p>
+            <p>⚡ 230 km/h</p>
+            <p>🎨 Albastra</p>
+            <p>🔋 Benzina</p>
+
+            <button>Cumpără</button>
+
+        </div>
+
+        <div class="car">
+            <img src="../Img/Ferarri.jpg" width="350">
+            <h3>Ferarri</h3>
+            <p>📅 An: 2024</p>
+            <p>💰 Preț: 20,500€</p>
+            <p>⚡ 0-100 km/h</p>
+            <p>🎨 Alb</p>
+            <p>🔋 Benzina</p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="../Img/Mclarren.jpg" width="350">
+            <h3>Mclarren</h3>
+            <p>📅 An: 2024</p>
+            <p>💰 Preț: 20,500€</p>
+            <p>⚡ 0-100 km/h</p>
+            <p>🎨 Alb</p>
+            <p>🔋 Benzina</p>
+            <button>Cumpără</button>
+        </div>
+        <div class="car">
+            <img src="../Img/Nissan.jpg" width="350">
+            <h3>Audi</h3>
+            <p>📅 An: 2022</p>
+            <p>💰 Preț: 12,999€</p>
+            <p>⚡ 211 km/h</p>
+            <p>🎨 Negru</p>
+            <p>🔋 Benzina</p>
+            <button>Cumpără</button>
+        </div>
+    </section>
+
+
+    <section class="reviews">
+        <h2>💬 Ce spun clienții noștri</h2>
+
+        <div class="reviews-container">
+
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>„Am cumpărat un BMW de la CrystalAuto și sunt foarte mulțumit. Servicii rapide și seriozitate!”</p>
+                <h4>– Andrei Popescu</h4>
+            </div>
+
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>„Mașina arată exact ca în poze. Recomand cu încredere!”</p>
+                <h4>– Maria Ionescu</h4>
+            </div>
+
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>„Prețuri bune și oameni de treabă. Voi reveni cu siguranță!”</p>
+                <h4>– Vlad Rusu</h4>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + descriere -->
+            <div class="footer-box">
+                <h2>CrystalAuto</h2>
+                <p>
+                    Mașini de calitate, performanță și eleganță.
+                    Alege experiența premium pentru fiecare drum.
+                </p>
+            </div>
+
+            <!-- Link-uri -->
+            <div class="footer-box">
+                <h3>Link-uri rapide</h3>
+                <a href="index.html">🚗 Mașini</a>
+                <a href="pages/informatii.html">ℹ️ Despre Noi</a>
+                <a href="pages/Contact.html">📞 Contact</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📍 Str. Ștefan cel Mare 132</p>
+                <p>📞 +373 693 515 31</p>
+                <p>📧 contact@crystalauto.md</p>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-box">
+                <h3>Urmărește-ne</h3>
+                <div class="socials">
+                    <a href="https://github.com/NicolaiCristea1999">Mergi la GitHub</a>🌐</a>
+                    <a href="">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">💬</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 CrystalAuto | Toate drepturile rezervate</p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
